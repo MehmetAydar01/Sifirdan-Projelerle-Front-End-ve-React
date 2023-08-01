@@ -31,7 +31,7 @@ kfmsdklfdmskfsmdfklsdmfkls
 
 Gorsel:
 
-![gorsel aciklamasi](https://picsum.photos/300/250)
+![Gorsel Aciklamasi](https://picsum.photos/300/250)
 
 ## CSS
 ## Bootstrap
