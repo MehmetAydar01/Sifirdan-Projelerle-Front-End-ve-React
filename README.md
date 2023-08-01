@@ -3,25 +3,22 @@
 ## Authors: Mehmet Aydar & Hakan Yalçınkaya
 
 ### Bölüm 3
-- **`Eğitime Hazırlık`**
-
-### Bölüm 4
 - **`HTML`**
 
-### Bölüm 5
+### Bölüm 4
 - **`VSCode`**
 
-### Bölüm 6
+### Bölüm 5
 - **`Git-Github`**
 
-### Bölüm 7
+### Bölüm 6
 - **`CSS`**
 
-### Bölüm 8
+### Bölüm 7
 - **`SASS-SCSS`**
 
-### Bölüm 9
+### Bölüm 8
 - **`BOOTSTRAP`**
 
-### Bölüm 10
+### Bölüm 9
 - **`JAVASCRIPT`**
