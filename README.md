@@ -5,6 +5,8 @@
 ### Bölüm 3
 - **`HTML`**
 
+- **`Bölüm Sonu Projesi 1 -->` [html-simple-css-demo](https://mehmetaydar-html-simple-css-demo.netlify.app/)**
+
 ### Bölüm 4
 - **`VSCode`**
 
