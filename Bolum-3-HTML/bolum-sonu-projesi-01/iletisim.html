@@ -25,52 +25,61 @@
         <p><cite>- Hakan Yalcinkaya & Mehmet Aydar</cite></p>
     </blockquote>
 
-    <section>
-        <h2>Simple CSS ile Hazirlanmis Blog:</h2>
+    <section id="iletisim">
+        <h2>Iletisim:</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugiat aliquam quis non veniam saepe earum vero culpa quaerat aut.</p>
     </section>
 
     <article>
-        <h2>Simple CSS Article</h2>
-        <img src="http://placekitten.com/1200/600" alt="">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quas suscipit repudiandae, est vero, ipsum cupiditate ut porro nesciunt deleniti vitae perspiciatis temporibus nihil sit quisquam, quo corporis eius. Explicabo!
-        </p>
-    </article>
-
-    <!-- article*3>h2>lorem2^img[src="https://picsum.photos/id/23$/1200/500"]+p>lorem10^ul>li*3>lorem3 -->
-    <article>
-        <h2>Lorem, ipsum.</h2>
-        <img src="https://picsum.photos/id/231/1200/500" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, consectetur.</p>
-        <ul>
-            <li>Lorem, ipsum dolor.</li>
-            <li>Accusantium, quibusdam dolore.</li>
-            <li>Odio, non quasi?</li>
-        </ul>
-    </article>
-    <article>
-        <h2>Commodi, ipsa?</h2>
-        <img src="https://picsum.photos/id/232/1200/500" alt="">
-        <p>Doloremque quibusdam corporis nostrum cupiditate hic labore laudantium quam vitae.</p>
-        <ul>
-            <li>Lorem, ipsum dolor.</li>
-            <li>Perspiciatis, error consectetur.</li>
-            <li>Atque, odit rerum!</li>
-        </ul>
-    </article>
-    <article>
-        <h2>Icinde Gizli Bilgiler Var :)</h2>
-        <details>
-            <summary>Spoiler alert!</summary>
-            <img src="https://picsum.photos/id/233/1200/500" alt="">
-            <p>Laborum doloremque numquam eum placeat animi optio neque eos eius?</p>
-            <ul>
-                <li>Lorem, ipsum dolor.</li>
-                <li>Iure, quasi minus!</li>
-                <li>Doloremque, error dolor!</li>
-            </ul>
-        </details>
+        <form>
+            <blockquote><p><strong>This is a form.</strong></p></blockquote>
+            
+            <p>
+                <select>
+                    <option selected="selected" value="1">Unvan</option>
+                    <option value="2">Mr</option>
+                    <option value="3">Miss</option>
+                    <option value="4">Mrs</option>
+                    <option value="5">Other</option>
+                </select>
+            </p>
+            
+            <p>
+                <label for="first_name">First name</label>
+                <input type="text" name="first_name">
+            </p>
+            
+            <p>
+                <label for="surname">Surname</label>
+                <input type="text" name="surname">
+            </p>
+            
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" required="">
+            </p>
+            
+            <p>
+                <label for="type">Gender:</label>
+                <label><input checked="checked" name="type" type="radio" value="sales" />Male</label> 
+                <label><input name="type" type="radio" value="support" />Female</label> 
+            </p>
+            
+            <p>
+                <label>Message</label>
+                <textarea rows="5"></textarea>
+            </p>
+            
+            <p>
+                <label>
+                <input type="checkbox" id="checkbox" value="terms">
+                I agree to the <a href="#iletisim">terms and conditions</a>
+                </label>
+            </p>
+            
+            <button>Send</button>
+            <button type="reset">Reset</button>
+        </form>
     </article>
 
 </body>
