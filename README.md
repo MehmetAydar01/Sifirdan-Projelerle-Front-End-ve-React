@@ -2,7 +2,7 @@
 
 ## Authors: Mehmet Aydar & Hakan Yalçınkaya
 
-### Bölüm 3
+### Bölüm 4
 - **`HTML`**
 
 - **`Bölüm Sonu Projesi 1 -->` [html-simple-css-demo](https://mehmetaydar-html-simple-css-demo.netlify.app/)**
@@ -12,20 +12,20 @@
 - **`Bölüm Sonu Projesi 3 -->` [html-claslesscss-demo](https://mehmetaydar-classless-css-demo.netlify.app/)**
 
 
-### Bölüm 4
+### Bölüm 5
 - **`VSCode`**
 
-### Bölüm 5
+### Bölüm 6
 - **`Git-Github`**
 
-### Bölüm 6
+### Bölüm 7
 - **`CSS`**
 
-### Bölüm 7
+### Bölüm 8
 - **`SASS-SCSS`**
 
-### Bölüm 8
+### Bölüm 9
 - **`BOOTSTRAP`**
 
-### Bölüm 9
+### Bölüm 10
 - **`JAVASCRIPT`**
