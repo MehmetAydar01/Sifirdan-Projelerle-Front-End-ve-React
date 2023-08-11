@@ -1,0 +1,9 @@
+/* @import url('../../Bolum-7-CSS/002-external-css.css'); */
+/* @import url('../002-external-css.css'); */
+
+/* Root Relative Path */
+/* @import url(/Bolum-7-CSS/002-external-css.css); */
+
+h1 {
+    background-color: red;
+}
