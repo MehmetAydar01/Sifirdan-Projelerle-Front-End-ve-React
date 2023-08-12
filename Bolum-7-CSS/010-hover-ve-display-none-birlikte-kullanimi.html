@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover ve Display None Birlikte Kullanimi</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        .btn {
+            background-color: #bdc3c7;
+            padding: 8px 16px;
+            border-radius: 4px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        /* .btn:hover {
+            
+        } */
+
+        .btn-primary {
+            background-color: #4ab3f9;
+        }
+
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+
+        .mt-10 {
+            margin-top: 10px;
+        }
+
+        .menu > li > ul {
+            display: none;
+        }
+        
+        .menu > li:hover {
+            background-color: red;
+        }
+
+        .menu > li:hover > ul {
+            display: block;
+        }
+
+        ul.menu > li:nth-child(odd) {
+            background-color: #2ecc71;
+        }
+        ul.menu > li:nth-child(even) {
+            background-color: #f1c40f;
+        }
+    </style>
+</head>
+<body>
+    <p class="mt-10">
+        Lorem ipsum, dolor sit amet,
+        <a href="#" class="btn btn-primary">incele</a>
+        consectetur adipisicing elit. Cum, totam?
+    </p>
+
+    <ul class="menu">
+        <li>Lorem.
+            <ul class="drop-down">
+                <li><a href="#">Lorem.</a></li>
+                <li><a href="#">Incidunt!</a></li>
+                <li><a href="#">Dignissimos.</a></li>
+            </ul>
+        </li>
+        <li>Ipsa.
+            <ul>
+                <li><a href="#">Lorem.</a></li>
+                <li><a href="#">Autem!</a></li>
+                <li><a href="#">Distinctio!</a></li>
+            </ul>
+        </li>
+        <li>Laborum.</li>
+        <li>Totam!</li>
+        <li>Provident?</li>
+        <li>Itaque.</li>
+        <li>Esse.</li>
+        <li>Aut?</li>
+        <li>Doloribus.</li>
+        <li>Voluptate?</li>
+    </ul>
+   
+</body>
+</html>
