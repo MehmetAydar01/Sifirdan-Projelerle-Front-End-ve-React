@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Ozellikleri</title>
+    <style>
+        .box {
+            width: 400px;
+            background-color: red;
+            display: inline-block;
+            height: 100px;
+        }
+        .span-box {
+            width: 400px;
+            height: 100px;
+            background-color: yellow;
+            display: inline-block;
+            /* display: block; */
+        }
+        span.info {
+            background-color: red;
+            width: 200px;
+            height: 30px;
+            display: inline-block;
+        }
+
+        strong {
+            background-color: orange;
+            width: 600px;
+            height: 50px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Lorem ipsum dolor sit.</div>
+    <div class="box">Voluptate hic eos in?</div>
+    <div class="box">Voluptates explicabo earum quisquam!</div>
+
+    <span class="span-box">Lorem ipsum dolor sit amet.</span>
+    <span class="span-box">Voluptatibus enim sunt vero architecto?</span>
+    <span class="span-box">Hic ipsa vero adipisci ullam!</span>
+
+    <p>Lorem, ipsum dolor <span class="info">sit amet</span> <strong>consectetur adipisicing</strong> elit. Architecto tenetur odio, quaerat laborum voluptates non alias a rerum, debitis placeat harum maiores, est magnam veritatis nulla ex delectus cum sed.</p>
+</body>
+</html>
