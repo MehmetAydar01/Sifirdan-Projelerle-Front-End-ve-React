@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Padding Border Kullanimi</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 400px;
+            /* min-height: 120px; */
+            max-height: 150px;
+            /* background-color: blue; */
+            border: 10px solid red;
+            /* margin-bottom: 30px; */
+            margin: 0 0 30px 0;
+            /* padding: 20px; */
+            /* padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-top: 20px; */
+
+            padding: 20px 50px 100px 200px;
+            border-radius: 200px;
+        }
+
+        .box:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 100px 10px 30px 50px;
+            background-color: darksalmon;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quod! Nulla velit labore quibusdam voluptatibus illum ullam maxime odio, accusamus pariatur iusto voluptatem dolorum, repellat necessitatibus explicabo nemo asperiores maiores? Omnis nisi odio, vitae recusandae incidunt sit officiis fugiat non, in accusantium debitis, ea exercitationem! Amet ducimus consequuntur consequatur ut?
+    </div>
+    <div class="box">Consequuntur offic animi rerum nam volu dolorum archit labori Fugiat.</div>
+    <div class="box">Dolores ratie vitae susci beatae tempo repellat nostrum Quis, magnam.</div>
+    <div class="box">Nisi facilis officia ratione ad conseq Animi dignissimos ipsum minus!</div>
+
+    <div class="circle"></div>
+</body>
+</html>
