@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font-Size</title>
+    <style>
+        html {
+            font-size: 10px;
+            /* REM */
+        }
+
+        .hero {
+            /* rem html etiketindeki font size dan alır. html etiketinde font-size: 10px verdigimiz icin, burası 2rem ise 2 * 10 = 20px olur. */
+            font-size: 2rem;
+            width: 600px;
+            margin: auto;
+            padding: 40px;
+            background-color: antiquewhite;
+        }
+
+        .hero > h1 {
+            /* em ise bir üst etiket(parent) neyse ona gore font-size alır. .hero etiketi 2rem = 20px mesela. Burası 1.5em olduguna gore 20 * 1.5 = 30px olur. */
+            font-size: 1.5em;
+        }
+
+        .hero p {
+            font-size: 1.1em;
+        }
+        p {
+            font-size: 2em;
+        }
+
+        main {
+            font-size: 40px;
+        }
+
+        main > h1 {
+            font-size: 1.5em;
+        }
+
+        main > p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    
+    <p class="p-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, distinctio adipisci? Molestias rerum minima esse quae tenetur repudiandae soluta vitae veritatis quas quaerat, blanditiis eos!
+    </p>
+    <p class="p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, distinctio adipisci? Molestias rerum minima esse quae tenetur repudiandae soluta vitae veritatis quas</p>
+
+    <div class="hero">
+        <h1>HERO</h1>
+        <p class="p-3">Consequatur enim tempore vel ullam nihil aperiam nulla rem eos officia laudantium doloremque veritatis, nemo sequi? Aliquid eaque sint, soluta, cupiditate ipsum quas voluptatem alias harum.</p>
+    </div>
+
+    <main>
+        <h1>HERO</h1>
+        <p class="p-3">Consequatur enim tempore vel ullam nihil aperiam nulla rem eos officia laudantium doloremque veritatis, nemo sequi? Aliquid eaque sint, soluta, cupiditate ipsum quas voluptatem alias harum.</p>
+    </main>
+
+</body>
+</html>
