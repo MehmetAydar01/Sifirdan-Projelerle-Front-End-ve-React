@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Kullanimi</title>
+    <style>
+        .box {
+            width: 150px;
+            float: left;
+            margin-right: 10px;
+        }
+        .bg-aqua {
+            background-color: aqua;
+        }
+
+        .clear-fix {
+            clear: both;
+        }
+
+        .bg-red {
+            background-color: red;
+        }
+
+        main {
+            width: 800px;
+            margin: 20px auto 0;
+        }
+
+        main > aside {
+            width: 30%;
+            float: left;
+        }
+        main > section {
+            width: 70%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box bg-aqua">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, sapiente.</div>
+    <div class="box bg-aqua">Ipsum, rem. Exercitationem rerum velit dolorem ratione quisquam natus reiciendis.</div>
+    <div class="box bg-aqua">Suscipit dolorum exercitationem consectetur hic! Ipsam perferendis soluta sint debitis!</div>
+    <div class="box bg-aqua">Quos mollitia et dolor sunt! Accusamus pariatur aut repudiandae dolorem.</div>
+    <div class="box bg-aqua">Quidem nisi quae atque odit et facilis corrupti illum molestiae!</div>
+    <div class="clear-fix"></div>
+    <div class="bg-red">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, ipsam.</div>
+
+    <!-- main>aside>ul>li*10>lorem1^^^section>h1>lorem10^p*3>lorem20 -->
+    <main>
+        <aside class="bg-aqua">
+            <ul>
+                <li>Lorem.</li>
+                <li>Iste!</li>
+                <li>Cupiditate.</li>
+                <li>Labore?</li>
+                <li>Provident.</li>
+                <li>At!</li>
+                <li>Quo!</li>
+                <li>Aliquam.</li>
+                <li>Blanditiis!</li>
+                <li>Eveniet.</li>
+            </ul>
+        </aside>
+        <section class="bg-red">
+            <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, quae!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sequi illum maiores corrupti autem illo tenetur architecto fuga cupiditate praesentium.</p>
+            <p>Cupiditate laboriosam dignissimos vero inventore soluta obcaecati quam modi harum fugiat ratione pariatur asperiores voluptatum, recusandae quos commodi eveniet sint.</p>
+            <p>Architecto quam aliquid eum doloribus. Maiores officia eaque, libero laborum perspiciatis vero neque possimus at aspernatur dolorum dignissimos optio dolor?</p>
+        </section>
+    </main>
+    
+</body>
+</html>
