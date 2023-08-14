@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root ile Dark Tema Olusturmak</title>
+    <style>
+        :root {
+            --green: #2ecc71;
+            --blue: #3498db;
+            --yellow: #f1c40f;
+            --red: #e74c3c;
+            --dark-blue: #34495e;
+            --light-white: #ecf0f1;
+
+            --bg-color: var(--light-white);
+            --text-color: var(--blue);
+        }
+
+        :root[data-theme="dark"] {
+            --bg-color: var(--dark-blue);
+            --text-color: var(--green);
+        }
+
+        :root[data-theme="red"] {
+            --bg-color: var(--red);
+            --text-color: var(--green);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, et?</h1>
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Debitis culpa quod tempore minus?</li>
+        <li>Pariatur totam accusamus similique assumenda.</li>
+        <li>Repudiandae mollitia perspiciatis inventore nam?</li>
+        <li>Voluptatem, vitae ratione. Cupiditate, consectetur.</li>
+        <li>Ut nemo omnis animi corrupti!</li>
+        <li>Aspernatur laboriosam dolore dolorum rerum?</li>
+        <li>Officia voluptatem voluptatum nobis nesciunt.</li>
+        <li>Voluptatum exercitationem ullam sunt sit!</li>
+        <li>Possimus rem maiores error nostrum?</li>
+    </ul>
+    
+</body>
+</html>
