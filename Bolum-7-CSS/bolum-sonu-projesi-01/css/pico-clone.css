@@ -7,7 +7,9 @@
     --midnight-blue: #2c3e50;
     --light-white: #ecf0f1;
     --silver: #bdc3c7;
-
+    --footer-color: #47a888;
+    --footer-dark-theme-color: #63b89b;
+    
     --box-size: 900px;
 
     --bg-color: var(--light-white);
@@ -15,12 +17,14 @@
     --body-color: white;
     --link-color: var(--blue);
     --link-color-hover: var(--dark-blue);
+    --footer-head-color: var(--footer-color);
 }
 
 :root[data-theme="dark"] {
     --body-color: var(--midnight-blue);
     --bg-color: var(--dark-blue);
     --text-color: var(--light-white);
+    --footer-head-color: var(--footer-dark-theme-color);
 }
 
 /* RESET */
@@ -43,6 +47,10 @@ body {
 /* GENERAL */
 html {
     font-size: 16px;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 header, 
@@ -68,8 +76,10 @@ img {
     margin: 10px 0;
 }
 
-/* NAV */
 
+
+
+/* NAV */
 header {
     border-bottom: 1px solid var(--silver);
 }
@@ -131,64 +141,105 @@ main {
 }
 
 /* ASIDE */
-aside, section {
+main > aside, main > section {
     float: left;
 }
 
-aside {
+main > aside {
     width: 30%;
     padding: 20px;
     text-align: center;
     transform: translateY(50%);
 }
 
-aside ul {
+main > aside ul {
     list-style: none;
 }
 
-aside > ul > li {
+main > aside > ul > li {
     margin-bottom: 10px;
 }
 
-aside > ul > li > a {
+main > aside > ul > li > a {
     color: var(--link-color);
     padding: 8px 12px;
     display: block;
     transition: all .3s ease;
 }
 
-aside > ul > li > a:hover {
+main > aside > ul > li > a:hover {
     color: var(--text-color);
 }
 
 /* SECTION */
-section {
+main > section {
     width: 70%;
 }
 
-article, article > header {
+main article, article > header {
     background-color: var(--body-color);
 }
 
-article {
+main article {
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 4px;
 }
 
-article > header {
+main article > header {
     padding: 0;
     border-bottom: none;
 }
 
-article > footer {
+main article > footer {
     padding: 10px 0;
 }
 
-article > footer > a {
+main article > footer > a {
     color: var(--link-color);
 }
 
-article > p {
+main article > p {
     margin-bottom: 10px;
 }
+
+/* FOOTER */
+main + footer {
+    background-color: var(--bg-color);
+}
+
+main + footer, main + footer > section:last-child {
+    border-top: 1px solid var(--silver);
+    text-align: center;
+}
+
+main + footer > section {
+    padding: 30px 0;
+}
+
+main + footer > section:first-child {
+    /* background-color: red; */
+    width: var(--box-size);
+    margin: 0 auto;
+}
+
+main + footer > section > article {
+    float: left;
+    width: 25%;
+}
+
+main + footer > section > article > h3 {
+    color: var(--footer-head-color);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+main + footer > section > article > p {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+}
+
+
+
+
+
