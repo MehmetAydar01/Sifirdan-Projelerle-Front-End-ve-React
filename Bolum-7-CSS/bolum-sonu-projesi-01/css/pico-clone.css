@@ -138,6 +138,8 @@ aside, section {
 aside {
     width: 30%;
     padding: 20px;
+    text-align: center;
+    transform: translateY(50%);
 }
 
 aside ul {
@@ -150,8 +152,9 @@ aside > ul > li {
 
 aside > ul > li > a {
     color: var(--link-color);
-    padding: 6px 10px;
+    padding: 8px 12px;
     display: block;
+    transition: all .3s ease;
 }
 
 aside > ul > li > a:hover {
