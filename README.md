@@ -21,6 +21,9 @@
 ### Bölüm 7
 - **`CSS`**
 
+- **`Bölüm Sonu Projesi 1 -->` [Pico Clone Pure CSS](https://mehmetaydar-pico-clone.netlify.app/)**
+
+
 ### Bölüm 8
 - **`SASS-SCSS`**
 
