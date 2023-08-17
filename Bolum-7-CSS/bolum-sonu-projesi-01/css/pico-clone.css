@@ -78,7 +78,6 @@ img {
 
 
 
-
 /* NAV */
 header {
     border-bottom: 1px solid var(--silver);
@@ -206,11 +205,11 @@ main article > p {
 /* FOOTER */
 main + footer {
     background-color: var(--bg-color);
+    text-align: center;
 }
 
-main + footer, main + footer > section:last-child {
+main + footer > section:last-child {
     border-top: 1px solid var(--silver);
-    text-align: center;
 }
 
 main + footer > section {
@@ -225,7 +224,12 @@ main + footer > section:first-child {
 
 main + footer > section > article {
     float: left;
-    width: 25%;
+    margin-right: 10px;
+    width: 24%;
+}
+
+main + footer > section > article:last-of-type {
+    margin-right: 0;
 }
 
 main + footer > section > article > h3 {
@@ -235,11 +239,100 @@ main + footer > section > article > h3 {
 }
 
 main + footer > section > article > p {
-    font-size: 0.95rem;
-    margin-bottom: 6px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 
+#footer_icons {
+    width: 225px;
+}
 
+#footer_icons a {
+    color: #1c1c1c;
+    font-size: 1.6rem;
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    line-height: 54px;
+    transition: all .4s ease;
+}
 
+#footer_icons > a:hover {
+    background-color: var(--body-color);
+    color: var(--footer-head-color);
+}
 
+#email_news {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#email_news > input {
+    display: inline-block;
+    color: var(--text-color);
+    padding: 10px;
+    background-color: var(--body-color);
+    border: none;
+    width: 82%;
+}
+
+::placeholder {
+    color: var(--text-color);
+    opacity: 1; /* Firefox */
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--text-color);
+}
+
+#email_news > button {
+    display: inline-block;
+    width: 18%;
+    height: 35px;
+    background-color: var(--footer-head-color);
+    border: none;
+    opacity: 75%;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+#email_news > button > i {
+    font-size: 1.4rem;
+    display: inline-block;
+    padding: 5px 0;
+    color: var(--light-white);
+}
+
+#email_news > button:hover {
+    opacity: 100%;
+    color: var(--text-color);
+}
+
+#info p:first-child {
+    margin: 5px 0 10px;
+}
+
+#gallery > img {
+    display: block;
+    float: left;
+    border: 1px solid var(--bg-color);
+    background-color: var(--body-color);
+    border-radius: 4px;
+    margin: 0px;
+    padding: 4px;
+    width: 33%;
+}
+
+footer > section:last-child > h3 {
+    margin: 8px;
+}
+
+footer span {
+    display: inline-block;
+    margin: 6px;
+    padding: 6px;
+}
 
