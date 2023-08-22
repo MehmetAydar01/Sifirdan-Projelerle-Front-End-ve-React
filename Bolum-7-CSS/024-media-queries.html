@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        :root {
+            --green: #2ecc71;
+            --blue: #3498db;
+            --yellow: #f1c40f;
+            --red: #e74c3c;
+            --dark-blue: #34495e;
+            --midnight-blue: #2c3e50;
+            --light-white: #ecf0f1;
+            --silver: #bdc3c7;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .box {
+            background-color: var(--yellow);
+            padding: 100px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav > ul > li {
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .clear-fix {
+            clear: both;
+        }
+
+        @media (max-width: 575px) { 
+            /* Mobile */
+            .box {
+                background-color: var(--red);
+            }
+        }
+
+        /* Small devices (landscape phones, 576px and up) */
+        @media (min-width: 576px) { 
+            .box {
+                background-color: var(--blue);
+            }
+
+            nav > ul > li {
+                float: left;
+                margin-bottom: 0;
+            }
+        }
+
+        /* Medium devices (tablets, 768px and up) */
+        @media (min-width: 768px) { 
+            .box {
+                background-color: var(--green);
+            }
+        }
+
+        /* Large devices (desktops, 992px and up) */
+        @media (min-width: 992px) { 
+            .box {
+                background-color: var(--midnight-blue);
+                color: var(--light-white);
+            }
+        }
+
+        /* X-Large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px) { 
+            nav {
+                padding: 40px;
+                background-color: var(--red);
+            }
+        }
+
+        /* XX-Large devices (larger desktops, 1400px and up) */
+        @media (min-width: 1400px) { 
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Lorem.</a></li>
+            <li><a href="#">Nihil.</a></li>
+            <li><a href="#">Optio.</a></li>
+            <li><a href="#">Perspiciatis?</a></li>
+            <li><a href="#">Corporis.</a></li>
+            <div class="clear-fix"></div>
+        </ul>
+    </nav>
+
+    
+
+    <h1 id="media-size"></h1>
+    <div class="box">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, tempore!
+    </div>
+
+    <script>
+        const mediaSizeContainer = document.querySelector("#media-size");
+        mediaSizeContainer.innerHTML = document.body.clientWidth;
+
+        addEventListener("resize", (event) => {
+            mediaSizeContainer.innerHTML = document.body.clientWidth;
+        });
+    </script>
+    
+</body>
+</html>
