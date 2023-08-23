@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox wrap - grow-shrink-basis</title>
+    <style>
+        :root {
+            --green: #2ecc71;
+            --blue: #3498db;
+            --yellow: #f1c40f;
+            --red: #e74c3c;
+            --dark-blue: #34495e;
+            --midnight-blue: #2c3e50;
+            --light-white: #ecf0f1;
+            --silver: #bdc3c7;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--silver);
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: var(--light-white);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .card {
+            padding: 10px 5px;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+            /* margin-bottom: 10px; */
+            /* margin: 10px; */
+            flex: 1 300px;
+            /* flex-grow: 1; */
+            /* flex-basis: 150px; */
+        }
+        
+        .big-card {
+            flex: 4 600px;
+            /* order: 1; */
+            order: -1;
+            /* flex-grow: 4; */
+            /* flex-basis: 450px; */
+        }
+
+        .card > img {
+            width: 100%;
+            background-color: #fff;
+            padding: 4px;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- .container>.card*4>img[src="https://picsum.photos/id/23$/500/300"]+h2>Lorem3^p*2>lorem10 -->
+    <div class="container">
+        <div class="card big-card">
+            <img src="https://picsum.photos/id/231/500/300" alt="">
+            <h2>BIG: Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, recusandae?</p>
+            <p>Incidunt, quasi deserunt. Dolore alias harum, quaerat maiores nulla eum?</p>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/id/232/500/300" alt="">
+            <h2>Neque, impedit aperiam?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, doloribus!</p>
+            <p>Quod hic veniam labore ab explicabo itaque quia culpa quo? Lorem ipsum dolor sit</p>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/id/233/500/300" alt="">
+            <h2>Quo, omnis deleniti.</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, quam?</p>
+            <p>Officia suscipit eveniet cum et quia asperiores ipsam ea nisi.</p>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/id/234/500/300" alt="">
+            <h2>Aliquid, commodi dolorem.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, incidunt?</p>
+            <p>Eius, accusamus beatae aut quaerat assumenda rem voluptas consequatur alias?</p>
+        </div>
+    </div>
+</body>
+</html>
