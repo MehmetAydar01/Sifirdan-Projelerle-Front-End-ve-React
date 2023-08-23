@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Order Kullanimi</title>
+    <style>
+        :root {
+            --green: #2ecc71;
+            --blue: #3498db;
+            --yellow: #f1c40f;
+            --red: #e74c3c;
+            --dark-blue: #34495e;
+            --midnight-blue: #2c3e50;
+            --light-white: #ecf0f1;
+            --silver: #bdc3c7;
+        }
+
+        body {
+            background-color: var(--silver);
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            background-color: var(--light-white);
+            width: 800px;
+            margin: 0 auto;
+            display: flex;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        @media (max-width: 575px) {
+            /* Mobile */
+            main {
+                flex-direction: column;
+                width: calc(100% - 80px);
+            }
+            aside {
+                order: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <main class="container">
+        <aside>
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="">Lorem.</a></li>
+                <li><a href="">Minima.</a></li>
+                <li><a href="">Aspernatur.</a></li>
+                <li><a href="">Iste.</a></li>
+                <li><a href="">Voluptatibus?</a></li>
+            </ul>
+        </aside>
+        <section>
+            <article>
+                <h2>Lorem, ipsum.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dolor.</p>
+                <p>Debitis, eius aspernatur illum modi exercitationem ratione vero repudiandae ad?</p>
+                <p>Ea non similique dolor tenetur hic odio porro maxime ut?</p>
+            </article>
+            <article>
+                <h2>A, architecto!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, recusandae.</p>
+                <p>Nobis, provident. Esse, eos nam debitis soluta velit modi mollitia!</p>
+                <p>Sit nemo sequi deserunt aspernatur nostrum! Recusandae id qui corrupti.</p>
+            </article>
+            <article>
+                <h2>Labore, repudiandae.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, esse.</p>
+                <p>Quia culpa aut impedit animi repellat sit expedita eligendi corporis.</p>
+                <p>Doloremque quidem unde dolore error explicabo nobis quia sint aspernatur.</p>
+            </article>
+            <article>
+                <h2>Perferendis, nulla?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, provident?</p>
+                <p>Iure quos sunt vitae voluptatibus laudantium minus aperiam, nemo nam.</p>
+                <p>Dolorum esse numquam ut, quos tempore ducimus? Nesciunt, voluptatem commodi?</p>
+            </article>
+        </section>
+    </main>
+
+</body>
+</html>
