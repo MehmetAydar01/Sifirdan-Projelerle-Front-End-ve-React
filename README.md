@@ -21,7 +21,8 @@
 ### Bölüm 7
 - **`CSS`**
 
-- **`Bölüm Sonu Projesi 1 -->` [Pico Clone Pure CSS](https://mehmetaydar-pico-clone.netlify.app/)**
+- **`Bölüm Sonu Projesi 1 -->` [Pico Clone - Pure CSS](https://mehmetaydar-pico-clone.netlify.app/)**
+- **`Bölüm Sonu Projesi 2 -->` [Frontend Mentor News Homepage(Responsive) - Pure CSS](https://mehmetaydar-news-homepage.netlify.app/)**
 
 
 ### Bölüm 8
