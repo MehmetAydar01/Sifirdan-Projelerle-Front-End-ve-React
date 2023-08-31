@@ -204,6 +204,10 @@ footer.container > .item p {
 
 /* MAX-WIDTH: 768PX */
 @media (max-width: 768px) {
+    nav {
+        margin-top: 40px;
+    }
+    
     .container {
         flex-direction: column;
         gap: 40px;
@@ -236,7 +240,7 @@ footer.container > .item p {
 /* MAX-WIDTH: 575PX */
 @media (max-width: 575px) {
     nav {
-        margin-top: 20px;
+        margin-top: 23px;
         flex-direction: column;
         gap: 20px;
         align-items: center;
@@ -265,4 +269,8 @@ footer.container > .item p {
     nav {
         padding: 0 20px;
     }
-} 
+
+    .container {
+        padding: 0 20px;
+    }
+}
