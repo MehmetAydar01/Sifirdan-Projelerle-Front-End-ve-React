@@ -25,7 +25,7 @@ nav > ul > li > a:hover {
   background-color: #34495e;
 }
 
-.container {
+.container, .extend-container-info {
   background-color: #34495e;
   color: #ecf0f1;
   padding: 10px;
@@ -61,4 +61,17 @@ nav > ul > li > a:hover {
   background-color: #f1c40f;
   border-radius: 4px;
   border: 1px solid #c9c9c9;
+}
+
+.extend-button, .extend-button--success {
+  color: white;
+  background-color: black;
+}
+.extend-button--success {
+  background-color: #34495e;
+}
+
+.extend-container-info {
+  background-color: yellowgreen;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
