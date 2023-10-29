@@ -1,12 +1,5 @@
 @import 'variables';
+@import 'base';
+@import 'nav';
+@import 'container';
 
-.info {
-    // $bg-color: red !global;
-    background-color: $bg-color;
-}
-
-.container {
-    background-color: $bg-color;
-    color: $text-color;
-    padding: $padding-10;
-}
