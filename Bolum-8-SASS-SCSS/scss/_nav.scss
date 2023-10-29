@@ -1,21 +1,24 @@
+// @import 'mixin__card';
+
 nav {
-  background-color: $bg-color;
+  // background-color: $bg-color;
+//   @include card_mixin_v2(#f1c40f);
   margin-bottom: 20px;
   padding: 15px 5px;
 
-  &>ul {
-      margin: 0;
-      display: flex;
-      list-style-type: none;
-      gap: 10px;
-      &>li {
-          &>a {
-              text-decoration: none;
-              color: $text-color;
-              &:hover {
-                  color: $primary-color;
-              }
-          }
+  & > ul {
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    & > li {
+      & > a {
+        text-decoration: none;
+        color: $text-color;
+        &:hover {
+          color: $primary-color;
+        }
       }
+    }
   }
 }
