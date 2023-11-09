@@ -91,10 +91,30 @@ nav > ul > li > a:hover {
   font-size: 16px;
 }
 
-.mt-5 {
-  margin-top: 5px;
+.mt-0 {
+  margin-top: 0px;
 }
 
 .box {
   background-image: url(https://picsum.photos/id/1/100/100);
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mt-20 {
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */
