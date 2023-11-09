@@ -79,7 +79,7 @@ nav > ul > li > a:hover {
 .icon-home {
   background-image: url("/assets/icons/home.svg");
   font-size: 12px;
-} 
+}
 
 .icon-left-arrow {
   background-image: url("/assets/icons/left-arrow.svg");
@@ -89,4 +89,12 @@ nav > ul > li > a:hover {
 .icon-right-arrow {
   background-image: url("/assets/icons/right-arrow.svg");
   font-size: 16px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.box {
+  background-image: url(https://picsum.photos/id/1/100/100);
 }/*# sourceMappingURL=style.css.map */
