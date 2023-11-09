@@ -74,4 +74,19 @@ nav > ul > li > a:hover {
 .extend-container-info {
   background-color: yellowgreen;
   font-size: 20px;
+}
+
+.icon-home {
+  background-image: url("/assets/icons/home.svg");
+  font-size: 12px;
+} 
+
+.icon-left-arrow {
+  background-image: url("/assets/icons/left-arrow.svg");
+  font-size: 14px;
+}
+
+.icon-right-arrow {
+  background-image: url("/assets/icons/right-arrow.svg");
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
