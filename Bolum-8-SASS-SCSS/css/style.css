@@ -241,4 +241,17 @@ h5 {
 
 h6 {
   font-size: 26;
+}
+
+.base-color, .lighter-color, .darken-color {
+  padding: 20px;
+  background-color: #2ecc71;
+}
+
+.darken-color {
+  background-color: #25a25a;
+}
+
+.lighter-color {
+  background-color: #a8ebc4;
 }/*# sourceMappingURL=style.css.map */
