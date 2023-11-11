@@ -217,4 +217,28 @@ nav > ul > li > a:hover {
 
 .pr-20 {
   padding-right: 20px;
+}
+
+h1 {
+  font-size: 40;
+}
+
+h2 {
+  font-size: 36;
+}
+
+h3 {
+  font-size: 32;
+}
+
+h4 {
+  font-size: 30;
+}
+
+h5 {
+  font-size: 28;
+}
+
+h6 {
+  font-size: 26;
 }/*# sourceMappingURL=style.css.map */
