@@ -28,7 +28,7 @@
 ### Bölüm 8
 - **`SASS-SCSS`**
 
-- **`Bölüm Sonu Projesi 1 -->` [Pico Project - SCSS](https://mehmetaydar-pico-clone.netlify.app/)**
+- **`Bölüm Sonu Projesi 1 -->` [Pico Project - SCSS](https://mehmetaydar-pico-project-scss.netlify.app/)**
 
 ### Bölüm 9
 - **`BOOTSTRAP`**
