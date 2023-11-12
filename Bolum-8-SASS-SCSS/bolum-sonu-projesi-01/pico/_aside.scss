@@ -1,0 +1,35 @@
+/* ASIDE */
+main {
+  & > aside,
+  & > section {
+    float: left;
+  }
+
+  & > aside {
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    transform: translateY(50%);
+
+    & ul {
+      list-style: none;
+    }
+
+    & > ul {
+      & > li {
+        margin-bottom: 10px;
+
+        & > a {
+          color: var(--link-color);
+          padding: 8px 12px;
+          display: block;
+          transition: all 0.3s ease;
+
+          &:hover {
+            color: var(--text-color);
+          }
+        }
+      }
+    }
+  }
+}
