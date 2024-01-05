@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hiding Elements</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- .container>.row>.col-sm-12>h1.bg-*6>{hosgeldin $} -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="bg-success d-block d-sm-none">hosgeldin Mobile 1</h1>
+          <h1 class="bg-info d-none d-sm-block d-md-none">hosgeldin SM - 2</h1>
+          <h1 class="bg-warning d-none d-md-block d-lg-none">
+            hosgeldin MD - 3
+          </h1>
+          <h1 class="bg-danger d-none d-lg-block d-xl-none">
+            hosgeldin LG - 4
+          </h1>
+          <h1 class="bg-success-subtle d-none d-xl-block d-xxl-none">
+            hosgeldin XL - 5
+          </h1>
+          <h1 class="bg-primary d-none d-xxl-block">hosgeldin XXL - 6</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- main.container>.row>aside.col-sm-3>ul>li*5>a>lorem1^^^^section.col-sm-9>article*3>h2>{Article $}^p*3>lorem10 -->
+    <main class="container">
+      <div class="row">
+        <aside class="col-sm-3 d-none d-sm-block bg-secondary p-3">
+          <ul>
+            <li><a href="#">Lorem.</a></li>
+            <li><a href="#">Nisi?</a></li>
+            <li><a href="#">Voluptates?</a></li>
+            <li><a href="#">Sequi.</a></li>
+            <li><a href="#">Magnam.</a></li>
+          </ul>
+        </aside>
+        <section class="col-sm-9">
+          <article>
+            <h2>Article 1</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+              reprehenderit?
+            </p>
+            <p>
+              Veniam cupiditate iusto illum quae sed temporibus perspiciatis
+              itaque excepturi!
+            </p>
+            <p>Earum distinctio ipsa odio, id ad ipsum adipisci facere quia.</p>
+          </article>
+          <article>
+            <h2>Article 2</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus,
+              voluptate?
+            </p>
+            <p>
+              Iusto asperiores temporibus in, corrupti unde ex tenetur esse
+              impedit.
+            </p>
+            <p>
+              Veritatis a inventore quidem eos reprehenderit praesentium, cum
+              iusto laborum.
+            </p>
+          </article>
+          <article>
+            <h2>Article 3</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+              nemo?
+            </p>
+            <p>
+              Cupiditate facere at accusamus praesentium repellat quidem
+              similique totam repudiandae?
+            </p>
+            <p>
+              Ipsum facilis voluptatem nobis dolorum quos quia corporis soluta
+              harum.
+            </p>
+          </article>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
