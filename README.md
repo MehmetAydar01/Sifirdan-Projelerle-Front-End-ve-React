@@ -33,5 +33,7 @@
 ### Bölüm 9
 - **`BOOTSTRAP`**
 
+- **`Bölüm Sonu Projesi 1 -->` [QXyGeN Project](https://ma-bootstrap-project.netlify.app/)**
+
 ### Bölüm 10
 - **`JAVASCRIPT`**
