@@ -34,6 +34,7 @@
 - **`BOOTSTRAP`**
 
 - **`Bölüm Sonu Projesi 1 -->` [QXyGeN Project](https://ma-bootstrap-project.netlify.app/)**
+- **`Bölüm Sonu Projesi 2 -->` [Starbucks Layout](https://ma-starbucks-layout.netlify.app/)**
 
 ### Bölüm 10
 - **`JAVASCRIPT`**
