@@ -1,13 +1,316 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Starbucks Layout Project</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Starbucks Layout Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-  <nav>Starbucks Bootstrap Project</nav>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top ps-5">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Starbucks <i class='bi bi-star-fill'></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link text-uppercase text-dark fw-semibold" href="#">starbucks rewards</a>
+          <a class="nav-link text-uppercase text-dark fw-semibold" href="#">menü</a>
+          <a class="nav-link text-uppercase text-dark fw-semibold" href="#">kampanyalar</a>
+          <a class="nav-link text-uppercase text-dark fw-semibold" href="#">e-gift</a>
+          <a class="nav-link text-uppercase text-dark fw-semibold" href="#">kurumsal satış</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container-fluid">
+    <div class="row">
+      <!-- ASIDE -->
+      <aside class="col-lg-5 bg-success-subtle d-none d-lg-block sticky-lg-top d-flex flex-column justify-content-between align-items-center" style='height: calc(100vh - 56px); top: 56px;'>
+        <div>
+          <img src="./images/image-6.jpg" class='rounded w-100'>
+        </div>
+      </aside>
+      <!-- SECTION -->
+      <!-- section.col-sm-7>article.card.mb-3*5>.card-body>h2>{Article $}^p*3>lorem20 -->
+      <section class="col-sm-12 col-lg-7 p-3 p-sm-5 pt-3">
+        <article class="card mb-4 border-0">
+          <div class="card-body">
+            <img src="./images//image-1.jpg" class='w-100 rounded d-none d-sm-inline-block' alt="toffee nut coffee">
+            <div class="ps-2 ps-sm-5">
+              <h5 class='my-3 fs-3'>Sevilen lezzet Toffee Nut geri döndü!</h5>
+              <p class='text-secondary'>Sezonun özlenen lezzeti, Toffee Nut ailesi yeniden aramızda. İster sıcak, ister soğuk; Latte, Cold Brew veya Frappuccino® seçenekleriyle karamelize fındık aromalı Toffee Nut ailesi mağazalarımızda seni bekliyor! 😊 Dilersen Starbucks® Delivers ile Hemen Siparis Et veya Diger Firmadan Siparis Et üzerinden de bulunduğun yere sipariş verebilirsin. 🛵</p>
+              <a href="#" class="btn btn-success rounded-pill me-0 me-sm-2 btn-sm px-3 text-capitalize fw-bold">Hemen Siparis Et</a>
+              <a href="#" class="btn btn-outline-success d-none d-sm-inline-block rounded-pill mt-2 mt-sm-0 btn-sm px-3 text-capitalize fw-bold">Diger Firmadan Siparis Et</a>
+            </div>
+          </div>
+        </article>
+        <article class="card mb-4 border-0">
+          <div class="row g-1">
+            <div class="col-md-6 mt-4">
+              <img src="./images/image-2.jpg" class="img-fluid rounded" alt="Starbucks ortadogu hakkinda bilgiler">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title fw-bold mt-2">Starbucks Orta Doğu Hakkında Bilgiler</h5>
+                <p class="card-text small text-secondary">TStarbucks’ın, Türkiye’yi de kapsayan Orta Doğu ve Kuzey Afrika (MENA) bölgesinde mağazalarının açma ve işletme yetkisi Kuveyt merkezli Alshaya Group’a aittir. Starbucks, kökleri Amerika Birleşik Devletleri'nde olsa da, dünya çapında faaliyet gösteren bir kahve markasıdır. 86 pazarda yer alan Starbucks’ın, Türkiye’yi de kapsayan Orta Doğu ve Kuzey Afrika operasyonları, 13 ülkede 1.900’den fazla mağaza ile Alshaya Group tarafından sürdürülmektedir.</p>
+                <a href="#" class="btn btn-success rounded-pill me-3 btn-sm px-3 text-capitalize fw-bold">daha fazla bilgi</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card mb-4 border-0">
+          <div class="row g-1">
+            <div class="col-md-6 mt-4">
+              <img src="./images/image-3.jpg" class="img-fluid rounded" alt="Starbucks Kalp">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title fw-bold mt-2">Starbucks Türkiye olarak attığımız her adım daha iyi yarınlar için.</h5>
+                <p class="card-text small text-secondary">Yarınları düşünenlerle #KalpKalbe çıktığımız yolculuklarda hedefimiz her zaman daha iyi bir gelecek.</p>
+                <a href="#" class="btn btn-success rounded-pill btn-sm px-3 text-capitalize fw-bold">projelerimiz hakkında detaylı bilgi</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card mb-4 border-0">
+          <div class="row g-1">
+            <div class="col-md-6 mt-4">
+              <img src="./images/image-4.jpg" class="img-fluid rounded" alt="nice 20 yillara">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title fw-bold mt-2">Nice 20 yıllara 💚</h5>
+                <p class="card-text small text-secondary">Tam 20 yıldır Türkiye'nin dört bir yanında keyifli sohbetleri, mutlu anları ve yeni deneyimleri bir kahveye sığdırmanın mutluluğunu yaşıyoruz. Bu yolculukta bize eşlik eden tüm kahve severler, iyi ki varsınız! ☕✨</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card mb-4 border-0">
+          <div class="row g-1">
+            <div class="col-md-6 mt-4">
+              <img src="./images/image-5.jpg" class="img-fluid rounded" alt="diledigin gibi ode">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title fw-bold mt-2">Dilediğin Gibi Öde Yıldız Kazan! ⭐</h5>
+                <p class="card-text small text-secondary">Starbucks® Mobil’de yeni dönem başladı! Ödemeni nakit, kredi kartı veya Starbucks Mobil ile yap, tüm harcamalarında yıldız kazan!</p>
+                <a href="#" class="btn btn-success rounded-pill me-3 btn-sm px-3 text-capitalize fw-bold">detaylı bilgi</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card mb-4 border-0">
+          <div class="row g-1">
+            <div class="col-md-6 mt-4">
+              <img src="./images/image-6.jpg" class="img-fluid rounded" alt="sevdiklerine özel hediyeler">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title fw-bold mt-2">Yeni koleksiyonumuzu keşfet! 🎁</h5>
+                <p class="card-text small text-secondary">Sevdiklerini mutlu edecek, yepyeni Starbucks® kupa, termos ve aksesuarlarımızı keşfetmeye ne dersin? 🛍️ Hepsiburada, Shayakahve.com.tr ve mağazalarımızda seni bekliyor! 👇🏻</p>
+                <a href="#" class="btn btn-success rounded-pill mb-2 mb-sm-0 me-0 me-sm-2 btn-sm px-3 text-capitalize fw-bold">hepsiburada</a>
+                <a href="#" class="btn btn-outline-success rounded-pill mb-2 mb-sm-0 btn-sm px-3 text-capitalize fw-bold">shaya kahve</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card mb-4 border-0">
+          <div class="row g-1">
+            <div class="col-md-6 mt-4">
+              <img src="./images/image-7.jpg" class="img-fluid rounded" alt="siparis vermek">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <p class="card-text small text-secondary mt-3">Starbucks® Delivers ile siparişini ver, sen neredeysen kahven oraya gelsin!</p>
+                <a href="#" class="btn btn-success rounded-pill mb-2 mb-sm-0 me-0 me-sm-2 btn-sm px-3 text-capitalize fw-bold">Yemeksepeti</a>
+                <a href="#" class="btn btn-outline-success rounded-pill mb-2 mb-sm-0 btn-sm px-3 text-capitalize fw-bold">GetirYemek</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card mb-4 border-0">
+          <div class="row g-1">
+            <div class="col-md-6 mt-4">
+              <img src="./images/image-8.jpg" class="img-fluid rounded" alt="hemen indir">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <p class="card-text small text-secondary mt-3">Starbucks® Mobil Uygulaması’nın ayrıcalıklı dünyası ve güncel kampanyalardan haberdar ol.</p>
+                <a href="#" class="btn btn-success rounded-pill btn-sm px-3 text-capitalize fw-bold">hemen incele</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card mb-4 border-0">
+          <div class="row g-1">
+            <div class="col-md-6 mt-4">
+              <img src="./images/image-9.jpg" class="img-fluid rounded" alt="arabaya servis">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title fw-bold mt-2">Arabaya servis ile ara vermeden yolculuğuna lezzet kat!</h5>
+                <p class="card-text small text-secondary">Aracından inmeden Starbucks® Drive Thru mağazalarımızdan siparişini ver, ara vermeden yolculuğuna lezzet kat! 🚗 Şimdilik sınırlı mağazalarımızda: 📍Şekerpınar 📍Manavgat 📍Balıkesir O204 📍Ankara Vega Cadde Yeni Drive Thru lokasyonlarımız için starbucks.com.tr'yi ziyaret etmeyi ve bizi sosyal medya hesaplarımızdan takip etmeyi unutma!</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="card mb-4 border-0 pb-5">
+          <div class="row g-1">
+            <div class="col-md-6 mt-4">
+              <img src="./images/image-10.jpg" class="img-fluid rounded" alt="eşsiz deneyim">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title fw-bold mt-2">Eşsiz bir deneyim seni bekliyor!</h5>
+                <p class="card-text small text-secondary">Egzotik bölgelerden nadir kahve çekirdeklerini özenle topladık ve Milano Roastry’de ustalıkla kavurduk. Her fincan kahve ayrı bir hikaye demek ve belki de bu hikayenin bir daha tekrarı yok!</p>
+                <a href="#" class="btn btn-success rounded-pill btn-sm px-3 text-capitalize fw-bold">detaylı bilgi</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- ACCORDION -->
+        <div class="card mb-4 mt-4 pt-4 border-0 border-top border-bottom pb-5">
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item border-0 mb-2">
+              <h2 class="accordion-header border-0">
+                <button class="border-0 bg-body fs-3 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                  Hakkımızda
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                <div class="accordion-body text-secondary fw-bold">
+                  <p><a href='#' class='nav-link'>Tarihçe</a></p>
+                  <p><a href='#' class='nav-link'>Şirketimiz</a></p>
+                  <p><a href='#' class='nav-link'>Mağazalarımız</a></p>
+                  <p><a href='#' class='nav-link'>Starbucks'tan Haberler</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-0 mb-2">
+              <h2 class="accordion-header">
+                <button class="border-0 bg-body fs-3 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Kahve
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body text-secondary fw-bold">
+                  <p><a href='#' class='nav-link text-capitalize'>starbucks reserve</a></p>
+                  <p><a href='#' class='nav-link text-capitalize'>kahve tedariği & kavurma & harmanlama</a></p>
+                  <p><a href='#' class='nav-link text-capitalize'>kavurma profiline göre kahveler</a></p>
+                  <p><a href='#' class='nav-link text-capitalize'>nasıl mükemmel kahve hazirlanir</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-0 mb-2">
+              <h2 class="accordion-header">
+                <button class="border-0 bg-body fs-3 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  Sosyal Sorumluluk
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body text-secondary fw-bold">
+                  <p><a href='#' class='nav-link'>Etik ticaret</a></p>
+                  <p><a href='#' class='nav-link'>Topluma katkı</a></p>
+                  <p><a href='#' class='nav-link'>Çevre</a></p>
+                  <p><a href='#' class='nav-link'>Çeşitlilik</a></p>
+                  <p><a href='#' class='nav-link'>Sürdürülebilirlik</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-0">
+              <h2 class="accordion-header">
+                <button class="border-0 bg-body fs-3 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                  Starbucks Delivers
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                <div class="accordion-body text-secondary fw-bold">
+                  <p><a href='#' class='nav-link'>Yemeksepeti</a></p>
+                  <p><a href='#' class='nav-link'>GetirYemek</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ACCORDION END -->
+        <!-- FOOTER -->
+        <footer class='pt-3'>
+          <div class="col-sm-12">
+            <!-- FOOTER ICONS -->
+            <div class="row">
+              <ul class='list-inline fs-5'>
+                <li class='bg-black list-inline-item rounded-pill text-center px-2 py-1 small me-3'>
+                  <a href="#">
+                    <i class="bi bi-facebook text-light"></i>
+                  </a>
+                </li>
+                <li class='bg-black list-inline-item rounded-pill text-center px-2 py-1 small me-3'>
+                  <a href="#">
+                    <i class="bi bi-instagram text-light"></i>
+                  </a>
+                </li>
+                <li class='bg-black list-inline-item rounded-pill text-center px-2 py-1 small me-3'>
+                  <a href="#">
+                    <i class="bi bi-youtube text-light"></i>
+                  </a>
+                </li>
+                <li class='bg-black list-inline-item rounded-pill text-center px-2 py-1 small me-3'>
+                  <a href="#">
+                    <i class="bi bi-twitter-x text-light"></i>
+                  </a>
+                </li>
+                <li class='bg-black list-inline-item rounded-pill text-center px-2 py-1 small'>
+                  <a href="#">
+                    <i class="bi bi-tiktok text-light"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- FOOTER LINKS -->
+            <div class="row mt-3">
+              <ul class="list-unstyled">
+                <li class='mb-4'>
+                  <a href="#" class='text-capitalize link-dark fw-semibold text-decoration-none'>kişisel veri aydınlatma metni</a>
+                </li>
+                <li class='mb-4'>
+                  <a href="#" class='text-capitalize link-dark fw-semibold text-decoration-none'>ticari iletişim aydınlatma metni</a>
+                </li>
+                <li class='mb-4'>
+                  <a href="#" class='text-capitalize link-dark fw-semibold link-offset-2 text-decoration-none'>kullanım koşulları</a>
+                </li>
+                <li class='mb-4'>
+                  <a href="#" class='text-capitalize link-dark fw-semibold text-decoration-none'>çerez tercihleri</a>
+                </li>
+                <li class='mb-4'>
+                  <a href="#" class='text-capitalize link-dark fw-semibold text-decoration-none'>çerez aydınlatma metni</a>
+                </li>
+                <li class='mb-4'>
+                  <a href="#" class='text-capitalize link-dark fw-semibold text-decoration-none'>besin degerleri tablosu</a>
+                </li>
+                <li class='mb-4'>
+                  <a href="#" class='text-capitalize link-dark fw-semibold text-decoration-none'>gift card</a>
+                </li>
+                <li class='mb-4'>
+                  <a href="#" class='text-capitalize link-dark fw-semibold text-decoration-none'>bize ulaşın</a>
+                </li>
+                <li>
+                  <a href="#" class="btn btn-outline-success rounded-pill btn-sm px-3 text-capitalize fw-semibold">English</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+
+      </section>
+    </div>
+  </main>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
