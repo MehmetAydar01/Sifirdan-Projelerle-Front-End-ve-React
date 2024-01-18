@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      nav {
+        padding: 10px;
+        background: #bdc3c7;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+      }
+      ul.menu {
+        display: flex;
+        position: relative;
+      }
+      ul.menu li {
+        margin-right: 10px;
+      }
+      .dropdown-menu {
+        position: fixed;
+        display: none;
+        background: #bdc3c7;
+        padding: 0.4rem 0.6rem;
+      }
+      .open {
+        display: block;
+      }
+      .dropdown svg {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
+        <li>Ana Sayfa</li>
+        <li class="dropdown">
+          Kategori
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-caret-down-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+            />
+          </svg>
+          <ul class="dropdown-menu">
+            <li>Bilgisayar</li>
+            <li>Telefon</li>
+            <li>Ekran</li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          Urunler
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-caret-down-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+            />
+          </svg>
+          <ul class="dropdown-menu">
+            <li>xx</li>
+            <li>yy</li>
+            <li>zzz</li>
+          </ul>
+        </li>
+        <li>Iletisim</li>
+      </ul>
+    </nav>
+
+    <!-- section>article*5>h2>lorem4^p*3>lorem10^hr -->
+    <section>
+      <article>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+          explicabo.
+        </p>
+        <p>
+          Error vel quidem similique ut. Qui unde facere laboriosam molestiae!
+        </p>
+        <p>
+          Ratione natus deserunt assumenda aut necessitatibus dolor animi
+          blanditiis nobis.
+        </p>
+        <hr />
+      </article>
+      <article>
+        <h2>Dolore quam ullam aut.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+          atque.
+        </p>
+        <p>
+          Itaque deleniti praesentium et fugiat aliquam reprehenderit quae,
+          autem facere!
+        </p>
+        <p>
+          Esse, sequi quisquam! Inventore molestias laudantium aspernatur
+          maiores consequatur eum.
+        </p>
+        <hr />
+      </article>
+      <article>
+        <h2>Ipsa vitae obcaecati doloribus.</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti,
+          cum!
+        </p>
+        <p>
+          Recusandae est deleniti quidem molestiae modi non laboriosam aperiam
+          eligendi?
+        </p>
+        <p>Iure quod ex atque maiores pariatur ad id, saepe quas.</p>
+        <hr />
+      </article>
+      <article>
+        <h2>Qui quidem expedita illo!</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, eveniet.
+        </p>
+        <p>
+          Quod doloremque aspernatur eaque earum quas veritatis assumenda
+          incidunt quo?
+        </p>
+        <p>
+          Quas doloribus libero numquam eum ipsum fugit magni repellendus quo?
+        </p>
+        <hr />
+      </article>
+      <article>
+        <h2>Totam libero alias corrupti.</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, optio?
+        </p>
+        <p>
+          Quasi voluptatum nostrum culpa, magnam atque quis ipsam cum corporis?
+        </p>
+        <p>
+          Porro delectus molestias ipsum sed quos ducimus ipsam nihil
+          cupiditate.
+        </p>
+        <hr />
+      </article>
+    </section>
+
+    <script>
+      const dropdownMenus = document.querySelectorAll('.dropdown');
+
+      dropdownMenus.forEach((menuItem) => {
+        menuItem.addEventListener('click', () => {
+          const dropDown = menuItem.querySelector('ul.dropdown-menu');
+          dropDown.classList.toggle('open');
+        });
+      });
+
+      // Baska bir yere tiklaninca menu kapansin
+      document.body.addEventListener('click', (event) => {
+        dropdownMenus.forEach((menuItem) => {
+          const dropDown = menuItem.querySelector('ul.dropdown-menu');
+          if (event.target != menuItem && event.target != dropDown) {
+            dropDown.classList.remove('open');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
