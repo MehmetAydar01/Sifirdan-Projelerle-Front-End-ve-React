@@ -2,7 +2,9 @@ import { nanoid } from 'nanoid';
 import './App.css';
 // import UserList, { SingleUser, ITEMS } from './components/UserList';
 import HebeleUserList, { SingleUser, ITEMS } from './components/UserList';
-import Button from './components/Button';
+import ButtonComponent from './components/Button';
+import ImgThumbnail from './components/ImgThumbnail';
+import { IMAGES } from './data';
 
 function App() {
   // 1: return ederkenken HTML Yapisi Return Etmen Gerekiyor (JSX)
@@ -49,7 +51,7 @@ function App() {
     <>
       <div className='bg-red'>Div icindeki Bilgi</div>
       <h1 style={{ backgroundColor: `${isActive ? 'green' : 'orange'}` }}>
-        Merhaba (2 + 2 String Bilg) {2 + 2} {userName}
+        Merhaba (2 + 2 String Bilgi) {2 + 2} {userName}
       </h1>
       <h2 style={styles.h2Style}>Kullanicilarin Sayisi: {users.length}</h2>
       <img src='https://picsum.photos/300/300' alt='' />
@@ -86,7 +88,7 @@ function App() {
             <li key={item.id}>{item.name.toUpperCase()}</li>
           ))}
       </ul>
-      <ImgThumbnail />
+      {/* <ImgThumbnail imgSrc='https://picsum.photos/600/250' /> */}
       <HebeleUserList />
       <SingleUser />
       <SingleUser />
@@ -97,24 +99,23 @@ function App() {
       {ITEMS.map((item, index) => (
         <span key={index}>{item}</span>
       ))}
+      <hr />
 
-      <Button />
+      <span btn='info' data='1111'>
+        normal html component
+      </span>
+      <hr />
+
+      <ButtonComponent className='btn btn-primary' info='deneme' dataId='1' />
+      <hr />
+
+      <ImgThumbnail imgSrc='https://picsum.photos/600/250' />
+      <hr />
+
+      {IMAGES.map((item, index) => {
+        return <ImgThumbnail key={index} imgSrc={item} imgAlt='' />;
+      })}
     </>
-  );
-}
-
-// Yeni Component
-function ImgThumbnail() {
-  return (
-    <img
-      src='https://picsum.photos/600/250'
-      alt=''
-      style={{
-        padding: '0.25rem',
-        borderRadius: '0.5rem',
-        border: '0.1rem solid #bdc3c7',
-      }}
-    />
   );
 }
 
