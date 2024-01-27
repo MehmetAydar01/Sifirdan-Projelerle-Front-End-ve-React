@@ -1,5 +1,5 @@
 import Button from './Button';
-import USERS from '../data/users';
+import { USERS } from '../data';
 
 const ITEMS = [1, 2, 3];
 
@@ -20,7 +20,7 @@ function UserList() {
           return <li key={index}>{user}</li>;
         })}
       </ul>
-      <Button />
+      <Button farkli-bilgi='hebele' />
       <hr />
     </>
   );
