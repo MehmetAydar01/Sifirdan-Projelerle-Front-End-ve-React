@@ -5,6 +5,7 @@ import HebeleUserList, { SingleUser, ITEMS } from './components/UserList';
 import ButtonComponent from './components/Button';
 import ImgThumbnail from './components/ImgThumbnail';
 import { IMAGES } from './data';
+import Card from './components/Card';
 
 function App() {
   // 1: return ederkenken HTML Yapisi Return Etmen Gerekiyor (JSX)
@@ -115,6 +116,27 @@ function App() {
       {IMAGES.map((item, index) => {
         return <ImgThumbnail key={index} imgSrc={item} imgAlt='' />;
       })}
+      <hr />
+
+      {/* CARD */}
+      <Card
+        title='Lorem Ipsum Dolor'
+        imgSrc='https://picsum.photos/id/11/400/250'
+        imgAlt='Card Bilgisi - Children Yok'
+      />
+      <hr />
+
+      {/* Eger bir component icine bilgi etiket olarak gonderilirse aslinda props.children olarak kullaniliyor... */}
+      <Card
+        title='Lorem Ipsum Dolor'
+        imgSrc='https://picsum.photos/400/250'
+        imgAlt='Card Bilgisi'
+        dataId='111'
+      >
+        <p>Lorem, ipsum dolor.</p>
+        <p>Recusandae, repudiandae porro.</p>
+        <p>Maxime, velit natus?</p>
+      </Card>
     </>
   );
 }
