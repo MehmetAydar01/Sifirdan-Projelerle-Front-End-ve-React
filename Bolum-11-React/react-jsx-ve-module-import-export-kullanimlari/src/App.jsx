@@ -6,6 +6,7 @@ import ButtonComponent from './components/Button';
 import ImgThumbnail from './components/ImgThumbnail';
 import { IMAGES } from './data';
 import Card from './components/Card';
+import ConditionalRenderedUserList from './components/ConditionalRenderedUserList';
 
 function App() {
   // 1: return ederkenken HTML Yapisi Return Etmen Gerekiyor (JSX)
@@ -137,6 +138,10 @@ function App() {
         <p>Recusandae, repudiandae porro.</p>
         <p>Maxime, velit natus?</p>
       </Card>
+
+      <hr />
+
+      <ConditionalRenderedUserList isActive={true} isLoading={true} />
     </>
   );
 }
