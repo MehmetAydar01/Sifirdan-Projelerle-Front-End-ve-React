@@ -4,7 +4,7 @@ import './App.css';
 import HebeleUserList, { SingleUser, ITEMS } from './components/UserList';
 import ButtonComponent from './components/Button';
 import ImgThumbnail from './components/ImgThumbnail';
-import { IMAGES } from './data';
+import { IMAGES, INFO } from './data';
 import Card from './components/Card';
 import ConditionalRenderedUserList from './components/ConditionalRenderedUserList';
 
@@ -142,6 +142,15 @@ function App() {
       <hr />
 
       <ConditionalRenderedUserList isActive={true} isLoading={true} />
+      <hr />
+
+      {/* OPTIONAL CHAIN */}
+      <h2>Optional Chaining</h2>
+      <p>Not: INFO icindeki products bilgisi aslinda yok...</p>
+      {INFO.products?.map((product, index) => {
+        return <li key={index}>{product}</li>;
+      })}
+      <hr />
     </>
   );
 }
