@@ -1,3 +1,4 @@
+import { CardWithState } from './components/CardWithState';
 import Counter from './components/Counter';
 import MultipleImages from './components/MultipleImages';
 
@@ -10,6 +11,11 @@ export default function AppWithState() {
       <Counter />
       <hr />
       <MultipleImages />
+      <hr />
+      <CardWithState />
+      <CardWithState />
+      <CardWithState />
+      <CardWithState />
     </>
   );
 }
