@@ -48,4 +48,5 @@
 
 - **`React`**
 
-- **`Bölüm Sonu Projesi 1 -->` [Mini Gorsel Proje](https://mini-gorsel-proje.netlify.app/)**
+- **`Bölüm Sonu Projesi 1 -->` [Mini Picture App](https://mini-gorsel-proje.netlify.app/)**
+- **`Bölüm Sonu Projesi 2 -->` [Mini Picture App - 2](https://mini-picture-app.netlify.app/)**
