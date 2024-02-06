@@ -1,56 +1,18 @@
-import { useState } from 'react';
-
 function TaskForm() {
-  const emptyForm = {
-    task: '',
-    priority: false,
-  };
-  const [formData, setFormData] = useState(emptyForm);
-  const [tasks, setTasks] = useState([]);
-
-  const handleInputChange = (event) => {
-    setFormData((prev) => {
-      return {
-        ...prev,
-        [event.target.name]:
-          event.target.type === 'checkbox'
-            ? event.target.checked
-            : event.target.value,
-      };
-    });
-  };
-
-  const handleFormSubmit = (event) => {
-    event.preventDefault();
-    if (formData.task.length > 3) {
-      setTasks((prev) => {
-        return [...prev, formData];
-      });
-      // setFormData(emptyForm);
-    }
-    event.target.reset();
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    console.log(e.target.elements);
   };
 
   return (
     <>
-      <ul>
-        {tasks.map((item, index) => {
-          return <li key={index}>{item.task}</li>;
-        })}
-      </ul>
       <form onSubmit={handleFormSubmit}>
         <div className='row mb-3'>
           <label htmlFor='task' className='col-sm-2 col-form-label'>
             Task
           </label>
           <div className='col-sm-10'>
-            <input
-              type='text'
-              className='form-control'
-              id='task'
-              name='task'
-              onChange={handleInputChange}
-            />
+            <input type='text' className='form-control' id='task' name='task' />
           </div>
         </div>
         <div className='row mb-3'>
@@ -61,7 +23,6 @@ function TaskForm() {
                 type='checkbox'
                 id='priority'
                 name='priority'
-                onChange={handleInputChange}
               />
               <label className='form-check-label' htmlFor='priority'>
                 Oncelikli
@@ -70,7 +31,7 @@ function TaskForm() {
           </div>
         </div>
         <button type='submit' className='btn btn-primary'>
-          Kaydet
+          Sign in
         </button>
       </form>
     </>
