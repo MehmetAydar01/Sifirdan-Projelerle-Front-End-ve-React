@@ -26,10 +26,9 @@ function TaskForm() {
       setTasks((prev) => {
         return [...prev, formData];
       });
+      // setFormData(emptyForm);
     }
-    setFormData(emptyForm);
     event.target.reset();
-    console.log(tasks);
   };
 
   return (
