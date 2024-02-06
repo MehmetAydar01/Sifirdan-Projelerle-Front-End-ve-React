@@ -31,13 +31,13 @@
 
 - **`SASS-SCSS`**
 
-- **`Bölüm Sonu Projesi 1 -->` [Pico Project - SCSS](https://mehmetaydar-pico-project-scss.netlify.app/)**
+- **`Bölüm Sonu Projesi 1 -->` [Pico Proje - SCSS](https://mehmetaydar-pico-project-scss.netlify.app/)**
 
 ### Bölüm 9
 
 - **`BOOTSTRAP`**
 
-- **`Bölüm Sonu Projesi 1 -->` [QXyGeN Project](https://ma-bootstrap-project.netlify.app/)**
+- **`Bölüm Sonu Projesi 1 -->` [QXyGeN Proje](https://ma-bootstrap-project.netlify.app/)**
 - **`Bölüm Sonu Projesi 2 -->` [Starbucks Layout](https://ma-starbucks-layout.netlify.app/)**
 
 ### Bölüm 10
@@ -48,5 +48,5 @@
 
 - **`React`**
 
-- **`Bölüm Sonu Projesi 1 -->` [Mini Picture App](https://mini-gorsel-proje.netlify.app/)**
-- **`Bölüm Sonu Projesi 2 -->` [Mini Picture App - 2](https://mini-picture-app.netlify.app/)**
+- **`Bölüm Sonu Projesi 1 -->` [Mini Gorsel Uygulamasi](https://mini-gorsel-proje.netlify.app/)**
+- **`Bölüm Sonu Projesi 2 -->` [Mini Gorsel Uygulamasi - 2](https://mini-picture-app.netlify.app/)**
