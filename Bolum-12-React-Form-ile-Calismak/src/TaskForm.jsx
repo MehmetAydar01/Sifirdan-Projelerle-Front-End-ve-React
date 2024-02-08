@@ -35,13 +35,18 @@ function TaskForm() {
   };
 
   const removeTask = (uuid) => {
-    console.log(uuid);
     setTasks((prev) => prev.filter((item) => item.uuid !== uuid));
+  };
+
+  const editTask = (uuid) => {
+    console.log(uuid);
+    const task = tasks.find((item) => item.uuid === uuid);
+    setFormData(task);
   };
 
   return (
     <>
-      <TaskList tasks={tasks} removeTask={removeTask} />
+      <TaskList tasks={tasks} removeTask={removeTask} editTask={editTask} />
       <form onSubmit={handleFormSubmit}>
         <div className='row mb-3'>
           <label htmlFor='task' className='col-sm-2 col-form-label'>
@@ -53,6 +58,7 @@ function TaskForm() {
               className='form-control'
               id='task'
               name='task'
+              value={formData.task}
               onChange={handleInputChange}
             />
           </div>
@@ -65,6 +71,7 @@ function TaskForm() {
                 type='checkbox'
                 id='priority'
                 name='priority'
+                checked={formData.priority}
                 onChange={handleInputChange}
               />
               <label className='form-check-label' htmlFor='priority'>
