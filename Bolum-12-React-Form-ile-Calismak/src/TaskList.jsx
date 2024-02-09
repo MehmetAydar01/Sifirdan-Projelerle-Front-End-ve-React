@@ -1,4 +1,4 @@
-import { FaTrash } from 'react-icons/fa';
+import { FaTrash, FaRocketchat } from 'react-icons/fa';
 
 const TaskList = ({ tasks, removeTask, editTask }) => {
   if (tasks.length === 0) {
@@ -13,6 +13,11 @@ const TaskList = ({ tasks, removeTask, editTask }) => {
           {tasks.map((item) => {
             return (
               <li key={item.uuid} className='list-group-item'>
+                {item.priority && (
+                  <span className='badge text-bg-secondary me-2'>
+                    <FaRocketchat />
+                  </span>
+                )}
                 {item.task}
                 <div className='btn-group float-end' role='group'>
                   <button
