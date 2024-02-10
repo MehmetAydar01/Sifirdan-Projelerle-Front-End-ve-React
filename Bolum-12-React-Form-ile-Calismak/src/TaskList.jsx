@@ -1,6 +1,24 @@
+import { useEffect, useState } from 'react';
 import { FaTrash, FaRocketchat } from 'react-icons/fa';
 
 const TaskList = ({ tasks, removeTask, editTask }) => {
+  const [priority, setPriority] = useState(false);
+  const [filteredTasks, setFilteredTasks] = useState(tasks);
+
+  const handlePriorityFilter = () => {
+    setPriority((prev) => !prev);
+  };
+
+  useEffect(() => {
+    setFilteredTasks(tasks);
+  }, [tasks]);
+
+  useEffect(() => {
+    priority
+      ? setFilteredTasks(tasks.filter((item) => item.priority))
+      : setFilteredTasks(tasks);
+  }, [priority]);
+
   if (tasks.length === 0) {
     return <></>;
   }
@@ -8,9 +26,19 @@ const TaskList = ({ tasks, removeTask, editTask }) => {
   return (
     <>
       <div className='p-4 bg-light mb-5 border rounded'>
-        <h4>Gorevler:</h4>
+        <h4 className='mb-3'>
+          Gorevler:
+          <span
+            className={`btn btn-sm ${
+              priority ? 'btn-primary' : 'btn-warning'
+            } float-end`}
+            onClick={handlePriorityFilter}
+          >
+            {priority ? 'Hepsini Goster' : 'Oncelikli Olanlari Goster'}
+          </span>
+        </h4>
         <ul className='list-group'>
-          {tasks.map((item) => {
+          {filteredTasks.map((item) => {
             return (
               <li key={item.uuid} className='list-group-item'>
                 {item.priority && (
