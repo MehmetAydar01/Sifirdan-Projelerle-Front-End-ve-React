@@ -1,14 +1,20 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import TaskList from './TaskList';
 import { v4 as uuidv4 } from 'uuid';
+
+const getTasksFromLocalStorage = () => {
+  return JSON.parse(localStorage.getItem('tasks')) || [];
+};
 
 function TaskForm() {
   const emptyForm = {
     task: '',
     priority: false,
+    isDone: false,
   };
   const [formData, setFormData] = useState(emptyForm);
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(getTasksFromLocalStorage());
+  const [taskChangeCount, setTaskChangeCount] = useState(0);
 
   const handleInputChange = (event) => {
     setFormData((prev) => {
@@ -37,23 +43,47 @@ function TaskForm() {
       });
     }
 
+    setTaskChangeCount((prev) => prev + 1);
     setFormData(emptyForm);
     event.target.reset();
   };
 
   const removeTask = (uuid) => {
     setTasks((prev) => prev.filter((item) => item.uuid !== uuid));
+    setTaskChangeCount((prev) => prev + 1);
   };
 
   const editTask = (uuid) => {
-    console.log(uuid);
     const task = tasks.find((item) => item.uuid === uuid);
     setFormData({ ...task, isEdited: true });
+    setTaskChangeCount((prev) => prev + 1);
+  };
+
+  // tasks bilgisi degisince....
+  useEffect(() => {
+    // if (taskChangeCount > 0) {
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+    // }
+  }, [taskChangeCount]);
+
+  const doneTask = (uuid) => {
+    const taskIndex = tasks.findIndex((item) => item.uuid === uuid);
+    const task = tasks[taskIndex];
+    task.isDone = !task.isDone;
+    const newTasks = [...tasks];
+    newTasks[taskIndex] = task;
+    setTasks(newTasks);
+    setTaskChangeCount((prev) => prev + 1);
   };
 
   return (
     <>
-      <TaskList tasks={tasks} removeTask={removeTask} editTask={editTask} />
+      <TaskList
+        tasks={tasks}
+        removeTask={removeTask}
+        editTask={editTask}
+        doneTask={doneTask}
+      />
       <form onSubmit={handleFormSubmit}>
         <div className='row mb-3'>
           <label htmlFor='task' className='col-sm-2 col-form-label'>
