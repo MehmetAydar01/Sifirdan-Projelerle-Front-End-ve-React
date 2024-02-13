@@ -1,39 +1,30 @@
+import { NavLink } from 'react-router-dom';
+
 const Navbar = () => {
   return (
     <>
       <nav
-        className='navbar navbar-expand-lg bg-body-tertiary mb-3'
+        className='navbar navbar-expand bg-body-tertiary mb-3'
         data-bs-theme='dark'
       >
         <div className='container'>
-          <a className='navbar-brand' href='#'>
+          <NavLink className='navbar-brand' to='/'>
             Q-Store
-          </a>
-          <button
-            className='navbar-toggler'
-            type='button'
-            data-bs-toggle='collapse'
-            data-bs-target='#navbarNavAltMarkup'
-            aria-controls='navbarNavAltMarkup'
-            aria-expanded='false'
-            aria-label='Toggle navigation'
-          >
-            <span className='navbar-toggler-icon'></span>
-          </button>
-          <div className='collapse navbar-collapse' id='navbarNavAltMarkup'>
+          </NavLink>
+          <div className='collapse navbar-collapse'>
             <div className='navbar-nav'>
-              <a className='nav-link active' aria-current='page' href='#'>
+              <NavLink className='nav-link' to='/'>
                 Ana Sayfa
-              </a>
-              <a className='nav-link' href='#'>
+              </NavLink>
+              <NavLink className='nav-link' to='/urunler'>
                 Ürünler
-              </a>
-              <a className='nav-link' href='#'>
+              </NavLink>
+              <NavLink className='nav-link' to='/about'>
                 Hakkımızda
-              </a>
-              <a className='nav-link' href='#'>
+              </NavLink>
+              <NavLink className='nav-link' to='/contact'>
                 İletişim
-              </a>
+              </NavLink>
             </div>
           </div>
         </div>
