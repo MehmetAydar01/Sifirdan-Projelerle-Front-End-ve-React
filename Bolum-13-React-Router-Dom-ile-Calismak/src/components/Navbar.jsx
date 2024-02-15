@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -8,15 +8,15 @@ const Navbar = () => {
         data-bs-theme='dark'
       >
         <div className='container'>
-          <NavLink className='navbar-brand' to='/'>
+          <Link className='navbar-brand' to='/'>
             Q-Store
-          </NavLink>
+          </Link>
           <div className='collapse navbar-collapse'>
             <div className='navbar-nav'>
               <NavLink className='nav-link' to='/'>
                 Ana Sayfa
               </NavLink>
-              <NavLink className='nav-link' to='/urunler'>
+              <NavLink className='nav-link' to='/products'>
                 Ürünler
               </NavLink>
               <NavLink className='nav-link' to='/about'>
