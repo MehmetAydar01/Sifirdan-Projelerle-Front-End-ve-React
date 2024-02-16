@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import Category from './Category';
+import Categories from './Categories';
 
 const ProductsLayout = () => {
   return (
@@ -9,7 +9,7 @@ const ProductsLayout = () => {
           <Outlet />
         </div>
         <div className='col-sm-4 mb-3'>
-          <Category />
+          <Categories />
         </div>
       </div>
     </>

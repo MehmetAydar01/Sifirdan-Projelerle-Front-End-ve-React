@@ -4,7 +4,7 @@ const ProductCard = ({ id, title, price, description, category, image }) => {
       <div className='card'>
         <img
           src={image}
-          className='card-img-top p-2 object-fit-cover'
+          className='card-img-top p-2'
           height={300}
           width={400}
           alt={title}
