@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import { About, Contact, Home, PageNotFound } from './pages';
-import { Category, Products, ProductsLayout } from './products';
+import { Category, Product, Products, ProductsLayout } from './products';
 
 const SiteRoutes = () => {
   return (
@@ -11,6 +11,7 @@ const SiteRoutes = () => {
       <Route path='/products' element={<ProductsLayout />}>
         <Route index={true} element={<Products />} />
         <Route path='category/:categoryName' element={<Category />} />
+        <Route path='product/:productId' element={<Product />} />
       </Route>
       <Route path='*' element={<PageNotFound />} />
     </Routes>
