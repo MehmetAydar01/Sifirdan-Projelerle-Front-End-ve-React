@@ -19,18 +19,12 @@ const handleClick = (pElement) => {
 };
 
 const classControl = (elementIndex, item) => {
-  if (elementIndex.classList.contains('paragraph-none')) {
-    elementIndex.classList.remove('paragraph-none');
-    elementIndex.classList.add('paragraph-blocks');
+  elementIndex.classList.toggle('paragraph-none');
+  item.classList.toggle('button-secondary-color');
+  if (!elementIndex.classList.contains('paragraph-none')) {
     item.innerHTML = '<span>-</span>';
-    item.classList.remove('button-primary-color');
-    item.classList.add('button-secondary-color');
   } else {
-    elementIndex.classList.remove('paragraph-block');
-    elementIndex.classList.add('paragraph-none');
     item.innerHTML = '<span>+</span>';
-    item.classList.add('button-primary-color');
-    item.classList.remove('button-secondary-color');
   }
 };
 
