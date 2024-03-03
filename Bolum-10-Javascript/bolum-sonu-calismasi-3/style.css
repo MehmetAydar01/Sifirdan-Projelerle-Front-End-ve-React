@@ -49,6 +49,8 @@ main {
 }
 
 .card {
+  position: absolute;
+  top: 6.25rem;
   background: #fff;
   width: 90vw;
   max-width: 40rem;
@@ -135,10 +137,6 @@ article section .content {
 
 .paragraph-none {
   display: none;
-}
-
-.paragraph-block {
-  display: block;
 }
 
 .button-primary-color {
