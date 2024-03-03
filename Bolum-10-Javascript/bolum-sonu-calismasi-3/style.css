@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background: #f9eeff;
+}
+
+h1 {
+  color: #301534;
+  font-size: 3rem;
+  margin-left: 2rem;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.image {
+  background-image: url('./images/background-pattern-desktop.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 111;
+}
+
+.card {
+  background: #fff;
+  width: 90vw;
+  max-width: 40rem;
+  margin: 0 auto;
+  border-radius: 0.875rem;
+  padding: 2.5rem 2.25rem;
+}
+
+.card .head {
+  display: flex;
+  align-items: center;
+}
+
+.card .head .icons {
+  position: relative;
+  width: 40px;
+  height: 32px;
+}
+
+.card .head .icon1,
+.card .head .icon2 {
+  margin-left: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 32px;
+  background-color: #a82bde;
+  border-radius: 50%;
+}
+
+.card .head .icon2 {
+  transform: rotate(90deg);
+  background-color: #a82bde;
+}
+
+article section,
+article section .content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+article section .content {
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.content h3 {
+  width: 90%;
+  color: #301534;
+}
+
+.content button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  line-height: 26px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+}
+
+.content button span {
+  font-size: 26px;
+  display: inline-block;
+  width: 100%;
+}
+
+.text {
+  line-height: 1.5rem;
+  font-weight: 300;
+  color: rgb(126, 126, 126);
+}
+
+.paragraph-none {
+  display: none;
+}
+
+.paragraph-block {
+  display: block;
+}
+
+.button-primary-color {
+  background-color: #a82bde;
+}
+
+.button-secondary-color {
+  background-color: #301534;
+}
+
+@media (max-width: 575px) {
+  .container {
+    height: min-content;
+    top: 3rem;
+  }
+  .card {
+    margin-bottom: 3rem;
+  }
+}
