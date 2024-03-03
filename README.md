@@ -43,6 +43,7 @@
 ### Bölüm 10
 
 - **`JAVASCRIPT`**
+- **`Bölüm Sonu Projesi 3 -->` [Accordion Uygulamasi](https://accordion-challenge-js.netlify.app/)**
 
 ### Bölüm 11
 
