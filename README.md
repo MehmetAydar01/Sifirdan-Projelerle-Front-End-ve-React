@@ -51,3 +51,4 @@
 
 - **`Bölüm Sonu Projesi 1 -->` [Mini Gorsel Uygulamasi](https://mini-gorsel-proje.netlify.app/)**
 - **`Bölüm Sonu Projesi 2 -->` [Mini Gorsel Uygulamasi - 2](https://mini-picture-app.netlify.app/)**
+- **`Bölüm Sonu Projesi 3 -->` [Interactive Rating](https://my-interactive-rating.netlify.app/)**
