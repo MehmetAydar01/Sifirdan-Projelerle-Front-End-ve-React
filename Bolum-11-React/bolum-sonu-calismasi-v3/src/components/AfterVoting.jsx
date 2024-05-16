@@ -14,7 +14,7 @@ const AfterVoting = ({ numberLists, getVoteValue }) => {
     <section className='after-vote'>
       <Icon thankyouIcon={thankyouIcon} />
       <SelectionVote numberLists={numberLists} getVoteValue={getVoteValue} />
-      <Content cardContent={cardContent} />
+      {getVoteValue && <Content cardContent={cardContent} />}
     </section>
   );
 };
