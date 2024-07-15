@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({ user, handleLogout }) => {
   return (
     <>
       <nav
@@ -25,6 +25,20 @@ const Navbar = () => {
               <NavLink className='nav-link' to='/contact'>
                 İletişim
               </NavLink>
+              {user ? (
+                <>
+                  <NavLink className='nav-link' to='/fav'>
+                    Favoriler
+                  </NavLink>
+                  <button className='nav-link' onClick={handleLogout}>
+                    Logout ({user.name})
+                  </button>
+                </>
+              ) : (
+                <NavLink className='nav-link' to='/login'>
+                  Login
+                </NavLink>
+              )}
             </div>
           </div>
         </div>
