@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import ProductCard from './ProductCard';
 
-const Products = () => {
+const Products = ({ user }) => {
   const [last10Products, setLast10Products] = useState([]);
 
   useEffect(() => {
@@ -15,7 +15,7 @@ const Products = () => {
       <h2>Urunler:</h2>
       <div className='row row-cols-sm-3 row-cols-md-4'>
         {last10Products.map((item) => {
-          return <ProductCard key={item.id} {...item} />;
+          return <ProductCard user={user} key={item.id} {...item} />;
         })}
       </div>
     </>
