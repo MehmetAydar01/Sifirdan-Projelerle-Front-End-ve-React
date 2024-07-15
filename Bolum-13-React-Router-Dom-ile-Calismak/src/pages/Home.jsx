@@ -1,10 +1,10 @@
 import { Products } from '../products';
 
-const Home = () => {
+const Home = ({ user }) => {
   return (
     <>
       <h1>Ana Sayfa</h1>
-      <Products />
+      <Products user={user} />
     </>
   );
 };
